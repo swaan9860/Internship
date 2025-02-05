@@ -182,10 +182,9 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   ```  
 # **Lesson 2**  
 ## 1. **CSS**  
-- ### In-line CSS  
-```    ```
+
 - ### External CSS  
-```    ```
+```    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  ```  
 
 ## **Webpage Inspect**  
 -  (Right click / or / Ctrl + Shift + I)
@@ -193,6 +192,13 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 - ### Specificity  
 -specify the tags to change with unique id.  
+```  <li id='two' class="TopItems">Second</li>  ```  
+``` 
+#two{
+  border: 2px solid black;
+}  
+```
+
 
 ## FONTS
 cssfontstack.com  
@@ -202,4 +208,130 @@ googlefonts.api
 
 ## **BOX MODEL**  
 
-## **BOOTSTRAP**
+## **BOOTSTRAP**  
+-getbootstrap.com  
+
+- ### Container Class  
+```  
+<div class="container">
+<h2>More Stuff</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>  
+  ```  
+
+- ### Jumbotron Class  
+```  
+<div class="jumbotron">
+<h1>Hello</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>  
+```  
+# **Lesson 3**  
+## **JAVASCRIPT** (inspect webpage -> console)  
+### Basic Data Types  
+- #### integer(any number is an integer)  
+- #### strings ("in quotes")  
+-Concatenation (with a "+" sign)  
+-Length(.length)  
+-Escape characters  
+
+- ("\n") starts a new line.  
+- ("\t") inserts a tab.  
+- (\"quotes\") inputs quotes inside a javascript string.  
+- Indexing (position of the letter in [] gives the lettter starts from 0)
+
+- #### booleans(true / false)  
+- #### undefined / null
+- #### variables  
+assigns values to a variable :  
+```  
+var account = 100;  
+var deposit = 50;  
+var total = account + deposit
+```  
+- #### console output  
+```  
+console.log("Message");
+  ```  
+- #### prompt  
+```  
+prompt("Message")  
+```  
+```  
+var age = prompt("Enter your age : ")  
+```  
+- ### Connecting a JAVASCRIPT file  
+```  
+<script src="myscript.js" charset="utf-8"></script>  
+```  
+- #### operators 
+- Comparision operators   
+">"  
+"<"  
+"<="  
+">="  
+- Logical operators  
+"&&" //AND operator  
+"||" //OR operator  
+"!" // NOT operator  
+
+## **CONTROL FLOW**  
+- #### IF statement  
+```  
+if(condition){
+//Exceute some code
+}
+  ```  
+- #### IF ELSE statement  
+```  
+if(condition){
+  //Execute some code}else{
+    //Execute some other code
+}  
+```  
+- #### IF, ELSE IF, ELSE statement  
+```  
+if(condition){
+  //Execute some code
+  }else if{
+    //Execute some other code
+}else{
+  //Execute some backup code
+}  
+```  
+## **LOOPS**  
+- ### While loop
+```  
+while(condition){
+  //execude this code while
+  //this condition is true
+}  
+```  
+- ### For loop  
+
+- #### for loop  
+```  
+for(var i=0; i<5; i++){
+//Execute some code
+}  
+```  
+
+- #### for/in loop  
+- #### for/of loop  
+
+## **FUNCTIONS**  
+- ### Function
+```  
+function hello(){
+  console.log("hello world!");
+}  
+//hello() to execute the defined function  
+```  
+- ### Return  
+```  
+function multiply(numInput){
+  var result = numInput * 5
+  return result
+}  
+```
+
