@@ -275,7 +275,7 @@ var age = prompt("Enter your age : ")
 "||" //OR operator  
 "!" // NOT operator  
 
-## **CONTROL FLOW**  
+### **CONTROL FLOW**  
 - #### IF statement  
 ```  
 if(condition){
@@ -334,4 +334,141 @@ function multiply(numInput){
   return result
 }  
 ```
+## **ARRAY**  
+```  
+countries["UK","Nepal","China"]//defining an array  
+countries[(index number assigned value in array)]
+```  
+-immutable  
+a string is immutable(non-changeable)  
 
+-mutable
+array is mutable(changeable)
+- #### mixed data type
+```  
+mixed[true, 20 , "string"]  
+```  
+- ### Array Methods  
+-(.push) to add into an array.  
+```  
+myArr.push("push")  
+```
+-(.pop) to remove from an array.  
+
+- ### Nested Array  
+```  
+var matrix = [[1,2,3],[4,5,6],[7,8,9]]  
+```  
+
+- ### Array Iteration  
+```  
+var arr = ["A", "B", "C"]
+for(var i=0; i<arr.length; i++){
+  console.log(arr[i]);
+}  
+```  
+## **JAVASCRIPT OBJECTS**  
+```  
+var carInfo = {make:"Ferrari", year:2002, model:"La'Ferrari"};  
+   (object) = (key)   (value)
+    carInfo["make"] -> "Ferrari"  
+```  
+```  
+var myNewObj = {a:"hello", b:[1,2,3], c:{inside:['a', 'b']}};
+myNewObj -> Object {a:"hello", b:Array[3], c:Object}  
+```  
+- #### "this" keyword  
+```  
+var myObj = {
+  name : "Swaan",
+  greet : function(){
+    console.log("Hello "+ this.name)
+  }
+}  
+```   
+## **DOCUMENT OBJECT MODEL**
+```  
+console.dir(docuemnt)  
+```
+### Methods for grabbing elements from DOM  
+- docuemnt.getElementById() || ->(returns the elements with the id that is passed in it // '#' for specifying an id)  
+- docuemnt.getElementByClassName() || ->(returns the element with the class name that is passed in it // '.' for specifying a class)  
+- docuemnt.getElementsByTagName() || ->(returns the element with the tag name that is passed in it)  
+- docuemnt.querySelector() || ->(returns the first object matching the CSS style selector)  
+- docuemnt.querySelectorAll() || ->(returns all objects matching the CSS style selector)  
+
+#### Document attributes:  
+- document.URL->(returns actual url of website)  
+- document.body->(returns the html of the entire body)  
+- document.head->(returns everything in the head of the page)  
+- document.links->(returns the links in the page)  
+
+### **Content Interaction**  
+```  
+// 
+
+var x = document.querySelector("p")
+
+// Show Text
+x.textContent
+
+// Reassign Text
+x.textContent = "new"
+
+// Refresh the page
+// Show actual HTML
+x.innerHTML
+
+// Edit HTML
+x.innerHTML = "This is <strong>BOLD</strong>"
+
+// Can't do that with just textContent
+
+/////////////////
+// Attributes //
+///////////////
+
+var special = document.querySelector("#special")
+var specialA = y.querySelector("a")
+
+specialA.getAttribute("href")
+
+specialA.setAttribute("href","https://www.amazon.com")  
+```
+
+### **Event Listener**  
+- Clicks
+- Hovers
+- Double Clicks
+- Drags, etc.  
+
+```  
+//  
+var headOne = document.querySelector('#one')
+var headTwo = document.querySelector('#two')
+var headThree = document.querySelector('#three')
+
+// Hover (mouseover and mouseout)
+headOne.addEventListener('mouseover',function(){
+  headOne.textContent = "Mouse currently Over";
+  headOne.style.color = 'red';
+})
+
+headOne.addEventListener('mouseout',function(){
+  headOne.textContent = "Mouse Not On me."
+  headOne.style.color = 'blue';
+})
+
+
+// On Click
+headTwo.addEventListener("click",function(){
+  headTwo.textContent = "Clicked On";
+  headTwo.style.color = 'blue';
+})
+
+// Double Click
+headThree.addEventListener("dblclick",function(){
+  headThree.textContent = "Double Clicked!";
+  headThree.style.color = 'red';
+})  
+```
