@@ -1,0 +1,189 @@
+body{
+
+}
+.navbar{
+align : center;
+display: inline;
+}
+.container{
+  align : center;
+  display: flex;
+  padding-left: 50px;
+  padding-right:0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #3d76d1;
+  color: white;
+}
+/* General styling for navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+/* Left section styling */
+.left {
+float: left;
+}
+
+.left a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Main navigation styling */
+.main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.main ul li {
+  display: inline;
+}
+
+.main ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s ease-in-out;
+}
+
+.main ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Right section styling */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.right button:hover {
+  background-color: #e68900;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  min-width: 150px;
+  display: none;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.dropdown a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown a:hover {
+  background-color: #555;
+}
+
+.right:hover .dropdown {
+  display: block;
+}
+a{
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+.main {
+  width: 60%;
+}
+
+h1{
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  width:20%;
+    float:left;
+   align-items: center;
+   justify-content: center;
+   margin: 30px ;
+}
+.grid-container img {
+    margin-right: 10px;
+}
+/* shop by category */
+.cross { padding-right: 5px; }
+
+.carousel-item > img{
+
+  max-width: 40%;
+  max-height: 40%;
+}
+span {
+  margin-left: 10px;
+  text-indent: -10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 8px;
+
+}
+/* navbarTwo */
+.navbarTwo {
+  display: flex;
+  background-color: #99ccff;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+    width: 100%;
+}
+.navbarTwo nav ul li {
+  display: inline-block;
+}
+.navbarTwo nav ul li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+/* Newsletter  */
+.newsletter{
+  background-color: #99ccff;
+  align :left;
+  width: 100%;
+}
+
+.newsletter a > img{
+  background-color:#99ccff;
+  float: right;
+  max-width: 5%;
+  max-height: 5%;
+}
