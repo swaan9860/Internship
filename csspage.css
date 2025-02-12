@@ -1,34 +1,37 @@
-body{
 
-}
-.navbar{
-align : center;
-display: inline;
-}
-.container{
-  align : center;
+/* container styling */
+.jumbotron{
   display: flex;
+  max-width: 100%;
+  background-color: #3d76d1;
+}
+.jumbotron p{
   padding-left: 50px;
   padding-right:0px;
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #3d76d1;
+  align-items: center;
+  justify-content: center;
+  align : center;
+  align-content: center;
   color: white;
 }
+
 /* General styling for navbar */
 .navbar {
+  align-items: : center;
+  display: inline;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
+  background-color: #ffffff;
 }
 
-/* Left section styling */
+/*  styling of Left section of navbar */
 .left {
-float: left;
+  background-color: white;
+  float: left;
 }
-
 .left a {
   color: black;
   text-decoration: none;
@@ -36,129 +39,167 @@ float: left;
   font-weight: bold;
 }
 
-/* Main navigation styling */
+/*  styling of main(middle) section of navbar */
+.main {
+  width: 60%;
+}
 .main ul {
+  align: center;
   list-style-type: none;
-  padding: 0;
+  padding-left: 10px;
   margin: 0;
   display: flex;
   gap: 15px;
 }
-
 .main ul li {
   display: inline;
 }
-
 .main ul li a {
-  color: white;
+  color:black;
   text-decoration: none;
-  padding: 8px 12px;
+
   transition: background 0.3s ease-in-out;
 }
-
 .main ul li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
 
-/* Right section styling */
-.right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.right button {
-  background-color: #ff9800;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: background 0.3s ease-in-out;
-}
-
-.right button:hover {
-  background-color: #e68900;
-}
-
 /* Dropdown menu styling */
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #333;
-  min-width: 150px;
-  display: none;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
 
-.dropdown a {
-  color: white;
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-  transition: background 0.3s ease-in-out;
-}
-
-.dropdown a:hover {
-  background-color: #555;
-}
-
-.right:hover .dropdown {
-  display: block;
-}
 a{
   padding-left: 20px;
   padding-right: 20px;
 
 }
-.main {
-  width: 60%;
+
+/*  styling of right section of navbar */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.right {
+  float: right;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+/* The sidepanel menu */
+.sidepanel {
+  height: 800px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #ffffff; /* white*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: blue;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: skyblue;
+  transition: background 0.5s ease-in-out;
 }
 
 h1{
+  padding-top: 30px;
   text-align: center;
 }
 
-.grid-container {
+/* yeti pet chew */
+.whole-container{
+  padding-top: 100px;
+  padding-left:80px;
+  padding-right:80px;
+}
+.row{
   display: grid;
-  width:20%;
-    float:left;
-   align-items: center;
-   justify-content: center;
-   margin: 30px ;
-}
-.grid-container img {
-    margin-right: 10px;
-}
-/* shop by category */
-.cross { padding-right: 5px; }
+  padding-right: 9px;
+  padding-left: 9px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 
-.carousel-item > img{
-
-  max-width: 40%;
-  max-height: 40%;
 }
-span {
-  margin-left: 10px;
-  text-indent: -10px;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li a {
-  display: block;
+.whole-container p{
   float: left;
-  text-align: center;
-  padding: 8px;
-
+  align-content: center;
+  justify-content: center;
+  color: #8a8883;
 }
+
+
+/* shop by category */
+.Category-Whole{
+  padding-left:100px;
+  padding-right:100px;
+}
+.Category-Whole .row img{
+  display:inline;
+  max-width: 50%;
+  max-height: 50%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+/* carousle */
+.carousel-slide{
+  padding-left:100px;
+  padding-right:100px;
+}
+.carousel-item > img{
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  padding-left: 350px;
+  align-items: center;
+  align:center;
+  max-width: 70%;
+  max-height: 70%;
+}
+
 /* navbarTwo */
 .navbarTwo {
   display: flex;
@@ -168,22 +209,66 @@ li a {
   align-items: center;
     width: 100%;
 }
-.navbarTwo nav ul li {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 8px;
+
+}
+.navbarTwo nav ul li{
+  padding-top: 20px;
+  padding-left: 20px;
   display: inline-block;
+  color: white; /* Change color on hover */
+  text-decoration: none;
 }
-.navbarTwo nav ul li a:hover {
-  color: #007bff; /* Change color on hover */
-}
+
 /* Newsletter  */
 .newsletter{
   background-color: #99ccff;
   align :left;
   width: 100%;
+  padding-bottom: 100px;
+}
+.newsletter h2{
+  color: white;
+  margin-left: 100px;
+}
+.newsletter input{
+  margin-left: 100px;
+}
+.newsletter i{
+  font-size:36px;
+  color: white;
+  justify-content: center;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.newsletter a > img{
-  background-color:#99ccff;
+/* payment */
+.payment{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align : center;
+  width: 100%;
+  background-color: #99ccff;
+}
+.payment i{
+  font-size:36px;
+  color: white;
   float: right;
-  max-width: 5%;
-  max-height: 5%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align : center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
